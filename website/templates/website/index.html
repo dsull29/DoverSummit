@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Dover Summit</title>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="{% static 'website/assets/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/assets/css/style.css' %}" />
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <div id="header">
+      <img src="{% static 'website/img/doversummitlogo.png' %}" class="responsive center" />
+      <!--				<span class="logo icon fa-paper-plane"></span>-->
+      <h2>
+        Elevate Your Online Presence with Dover Summit <br />
+        Custom Website Solutions for Small Businesses and Organizations
+      </h2>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+      <header class="major container medium">
+        <h2>Welcome to Dover Summit</h2>
+        <p>
+          We specialize in building stunning, functional websites for small
+          businesses and organizations. With our cutting-edge software and
+          expert design team, we can help take your online presence to the next
+          level.
+        </p>
+      </header>
+
+      <div class="box alt container">
+        <section class="feature left">
+          <a href="#" class="image icon solid"
+            ><img src="{% static 'website/img/succeed_online.png' %}" height=360px" width="496px" alt=""
+          /></a>
+          <div class="content">
+            <h3>Our Mission: Helping You Succeed Online</h3>
+            <p>
+              Our goal is to help small businesses and organizations succeed
+              online. We offer custom website solutions that meet their unique
+              needs, whether they're starting from scratch or revamping their
+              current website.
+            </p>
+          </div>
+        </section>
+        <section class="feature right">
+          <a href="#" class="image icon solid"
+            ><img src="{% static 'website/img/expertly_crafted.png' %}" height=360px" width="496px" alt=""
+          /></a>
+          <div class="content">
+            <h3>Expertly Crafted Websites</h3>
+            <p>
+              At Dover Summit, we blend great design with functionality to
+              create visually stunning, user-friendly websites optimized for
+              search engines. Our team of experienced designers and developers
+              work together to ensure your business is easily found online.
+            </p>
+          </div>
+        </section>
+        <section class="feature left">
+          <a href="#" class="image icon solid"
+            ><img src="{% static 'website/img/contact_us.png' %}" height=360px" width="496px"  alt=""
+          /></a>
+          <div class="content">
+            <h3>Get in Touch and Let's Get Started</h3>
+            <p>
+              So why wait? If you're ready to take your online presence to the
+              next level, contact us today to schedule a consultation and learn
+              more about what we can do for you. We can't wait to help you
+              succeed online!
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container medium">
+        <header class="major last">
+          <h2>Questions or comments?</h2>
+        </header>
+
+        <p>Get in touch to get started today!</p>
+
+        <form
+          action="mailto:david@doversummit.dev"
+          method="get"
+          enctype="text/plain"
+        >
+          <div class="row">
+            <div class="col-6 col-12-mobilep">
+              <input type="text" name="name" placeholder="Name" />
+            </div>
+            <div class="col-6 col-12-mobilep">
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="col-12">
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="6"
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <ul class="actions special">
+                <li>
+                  <input type="submit" name="submit" value="Send Message" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+
+        <ul class="icons">
+          <li>
+            <a
+              href="https://twitter.com/doversummit"
+              class="icon brands fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/dsull29" class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dsull829/"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+        </ul>
+
+        <ul class="copyright">
+          <li>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Dover Summit LLC. All rights reserved.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'website/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'website/assets/js/browser.min.js' %}"></script>
+    <script src="{% static 'website/assets/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'website/assets/js/util.js' %}"></script>
+    <script src="{% static 'website/assets/js/main.js' %}"></script>
+  </body>
+</html>
