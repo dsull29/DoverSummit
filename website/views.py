@@ -28,8 +28,7 @@ def handle_post(request):
         message = "\n".join(body.values())
 
         try:
-            send_mail(subject, message, settings.EMAIL_HOST_USER,
-                      settings.EMAIL_LIST)
+            send_mail(subject, message, settings.EMAIL_HOST_USER,[settings.EMAIL_HOST_USER])
             messages.success(request, 'Your email has been sent successfully!')
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
