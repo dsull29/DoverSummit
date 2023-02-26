@@ -24,7 +24,10 @@ SECRET_KEY = config("SECRET_KEY")
 
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.40.199', '0.0.0.0', '127.0.1.1']
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.40.199', 
+                 '0.0.0.0', '127.0.1.1',
+                 '192.168.40.126', '71.181.41.51',
+                 'doversummit.dev']
 
 
 # Application definition
