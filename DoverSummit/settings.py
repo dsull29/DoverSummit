@@ -25,9 +25,8 @@ SECRET_KEY = config("SECRET_KEY")
 DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = ['127.0.0.1', '192.168.40.199', 
-                 '0.0.0.0', '127.0.1.1',
-                 '192.168.40.126', '71.181.41.51',
-                 'doversummit.dev']
+                 '0.0.0.0', '127.0.1.1','71.181.41.51',
+                 'doversummit.dev','www.doversummit.dev']
 
 
 # Application definition
@@ -121,10 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = '/var/www/static/'
+STATIC_ROOT = '/var/www/doversummit.dev/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    '/var/www/static/',
+    '/var/www/doversummit.dev/static/',
 ]
 
 
